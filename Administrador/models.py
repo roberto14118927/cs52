@@ -7,6 +7,7 @@ class Administrador(models.Model):
     ap_pat = models.CharField(max_length=100, null=False)
     ap_mat = models.CharField(max_length=100, null=False)
     year = models.IntegerField(null=False)
+    img = models.ImageField(upload_to='media/', null=True, blank=True)
     delete = models.BooleanField(default = False)
     created = models.DateTimeField(default = timezone.now)
     edited = models.DateTimeField(blank=True, null=True, default=None)
