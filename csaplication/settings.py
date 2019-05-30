@@ -21,7 +21,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '3538r(r(#-y_od)@3l_8c+!nz6%_o)jw8mn1a3q_1st61%b-93'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -170,6 +169,7 @@ except ImportError:
 
 
 if not DEBUG:
+    SECRET_KEY = 'SECRET_KEY'
     DATABASES = {
         'default': {
             'ENGINE' : 'django.db.backends.postgresql_psycopg2',
