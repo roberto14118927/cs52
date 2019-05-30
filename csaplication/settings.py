@@ -25,7 +25,7 @@ SECRET_KEY = '3538r(r(#-y_od)@3l_8c+!nz6%_o)jw8mn1a3q_1st61%b-93'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['url_de app_heroku']
+ALLOWED_HOSTS = ['pruebacs1.herokuapp.com']
 
 
 # Application definition
@@ -166,7 +166,7 @@ try:
     from csaplication.local_settings import *
 except ImportError:
     pass
-    
+
 
 if not DEBUG:
     DATABASES = {
