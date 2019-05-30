@@ -166,6 +166,7 @@ try:
     from csaplication.local_settings import *
 except ImportError:
     pass
+    
 
 if not DEBUG:
     DATABASES = {
