@@ -175,7 +175,7 @@ if not DEBUG:
             'USER': 'DB_USER',
             'PASSWORD': 'DB_PASSWORD',
             'HOST': 'DB_HOST',
-            'PORT': 'DT_PORT'
+            'PORT': 'DB_PORT'
         }
     }
     import django_heroku
